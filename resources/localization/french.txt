@@ -1,0 +1,2 @@
+# Pokemon Names #
+pokemon.bulbasaur.name=Bulbizarre

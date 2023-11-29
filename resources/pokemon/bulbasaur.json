@@ -1,0 +1,75 @@
+{
+  "name": "bulbasaur",
+  "types": [
+    "GRASS",
+    "POISON"
+  ],
+  "species": "Seed",
+  "height": 0.7,
+  "weight": 6.9,
+  "ability": {
+    "1": "Overgrow",
+    "2": "",
+    "H": "Chlorophyll"
+  },
+  "training": {
+    "ev": {
+      "amount": 1,
+      "type": "spa"
+    },
+    "catch": 45,
+    "friendship": 50,
+    "exp": 64,
+    "growth": "medium-slow"
+  },
+  "breeding": {
+    "egg": [
+      "grass",
+      "monster"
+    ],
+    "gender": [
+      "male": 87.5,
+      "female": 12.5
+    ],
+    "cycles": 20
+  },
+  "stats": {
+    "hp": 45,
+    "atk": 49,
+    "def": 49,
+    "spa": 65,
+    "spd": 65,
+    "spe": 45
+  },
+  "moves": {
+    "level": {
+      "1": ["growl", "tackle"],
+      "3": ["vine whip"],
+      "6": ["growth"],
+      "9": ["leech seed"],
+      "12": ["razor leaf"],
+      "15": ["poison powder", "sleep powder"],
+      "18": ["seed bomb"],
+      "21": ["take down"],
+      "24": ["sweet scent"],
+      "27": ["synthesis"],
+      "30": ["worry seed"],
+      "33": ["double-edge"],
+      "36": ["solar beam"]
+    },
+    "egg": [
+      "amnesia",
+      "charm",
+      "curse",
+      "grassy terrain",
+      "ingrain",
+      "leaf storm",
+      "magical leaf",
+      "nature power",
+      "petal dance",
+      "power whip",
+      "skull bash",
+      "sludge"
+    ]
+  }
+}
