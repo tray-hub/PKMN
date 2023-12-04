@@ -1,5 +1,5 @@
 {
-  "name": "bulbasaur",
+  "dex": 1,
   "types": [
     "GRASS",
     "POISON"
@@ -71,5 +71,10 @@
       "skull bash",
       "sludge"
     ]
-  }
+  },
+  "tags": [
+    "kanto",
+    "starter",
+    "basic"
+  ]
 }
