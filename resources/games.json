@@ -1,0 +1,197 @@
+{
+  "red": {
+    "name": "Red",
+    "generation": 1,
+    "console": "Game Boy"
+  },
+  "green": {
+    "name": "Green",
+    "generation": 1,
+    "console": "Game Boy"
+  },
+  "blue": {
+    "name": "Blue",
+    "generation": 1,
+    "console": "Game Boy"
+  },
+  "yellow": {
+    "name": "Yellow",
+    "generation": 1,
+    "console": "Game Boy"
+  },
+  "gold": {
+    "name": "Gold",
+    "generation": 2,
+    "console": "Game Boy Color"
+  },
+  "silver": {
+    "name": "Silver",
+    "generation": 2,
+    "console": "Game Boy Color"
+  },
+  "crystal": {
+    "name": "Crystal",
+    "generation": 2,
+    "console": "Game Boy Color"
+  },
+  "ruby": {
+    "name": "Ruby",
+    "generation": 3,
+    "console": "Game Boy Advance"
+  },
+  "sapphire": {
+    "name": "Sapphire",
+    "generation": 3,
+    "console": "Game Boy Advance"
+  },
+  "emerald": {
+    "name": "Emerald",
+    "generation": 3,
+    "console": "Game Boy Advance"
+  },
+  "firered": {
+    "name": "FireRed",
+    "generation": 3,
+    "console": "Game Boy Advance"
+  },
+  "leafgreen": {
+    "name": "LeafGreen",
+    "generation": 3,
+    "console": "Game Boy Advance"
+  },
+  "diamond": {
+    "name": "Diamond",
+    "generation": 4,
+    "console": "Nintendo DS"
+  },
+  "pearl": {
+    "name": "Pearl",
+    "generation": 4,
+    "console": "Nintendo DS"
+  },
+  "platinum": {
+    "name": "Platinum",
+    "generation": 4,
+    "console": "Nintendo DS"
+  },
+  "heartgold": {
+    "name": "Heart Gold",
+    "generation": 4,
+    "console": "Nintendo DS"
+  },
+  "soulsilver": {
+    "name": "Soul Silver",
+    "generation": 4,
+    "console": "Nintendo DS"
+  },
+  "black": {
+    "name": "Black",
+    "generation": 5,
+    "console": "Nintendo DS"
+  },
+  "white": {
+    "name": "White",
+    "generation": 5,
+    "console": "Nintendo DS"
+  },
+  "black2": {
+    "name": "Black 2",
+    "generation": 5,
+    "console": "Nintendo DS"
+  },
+  "white2": {
+    "name": "White 2",
+    "generation": 5,
+    "console": "Nintendo DS"
+  },
+  "x": {
+    "name": "X",
+    "generation": 6,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "y": {
+    "name": "y",
+    "generation": 6,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "omegaruby": {
+    "name": "Omega Ruby",
+    "generation": 6,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "alphasapphire": {
+    "name": "Alpha Sapphire",
+    "generation": 6,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "go": {
+    "name": "GO",
+    "generation": 9,
+    "console": "Mobile"
+  },
+  "sun": {
+    "name": "Sun",
+    "generation": 7,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "moon": {
+    "name": "Moon",
+    "generation": 7,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "ultrasun": {
+    "name": "Ultra Sun",
+    "generation": 7,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "ultramoon": {
+    "name": "Ultra Moon",
+    "generation": 7,
+    "console": "Nintendo 3DS & 2DS"
+  },
+  "letsgoeevee": {
+    "name": "Let's Go Eevee",
+    "generation": 1,
+    "console": "Nintendo Switch"
+  },
+  "letsgopikachu": {
+    "name": "Let's Go Pikachu",
+    "generation": 1,
+    "console": "Nintendo Switch"
+  },
+  "sword": {
+    "name": "Sword",
+    "generation": 8,
+    "console": "Nintendo Switch"
+  },
+  "shield": {
+    "name": "",
+    "generation": 2,
+    "console": "Nintendo Switch"
+  },
+  "brilliantdiamond": {
+    "name": "Brillian Diamond",
+    "generation": 4,
+    "console": "Nintendo Switch"
+  },
+  "shiningpearl": {
+    "name": "Shining Pearl",
+    "generation": 4,
+    "console": "Nintendo Switch"
+  },
+  "legendsarceus": {
+    "name": "Legends: Arceus",
+    "generation": 8,
+    "console": "Nintendo Switch"
+  },
+  "scarlet": {
+    "name": "Scarlet",
+    "generation": 9,
+    "console": "Nintendo Switch"
+  },
+  "violet": {
+    "name": "Violet",
+    "generation": 9,
+    "console": "Nintendo Switch"
+  }
+}

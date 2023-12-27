@@ -1,0 +1,49 @@
+{
+  "dex": 27,
+  "types": [
+    "GROUND"
+  ],
+  "species": "Mouse",
+  "height": 0.6,
+  "weight": 12,
+  "ability": {
+    "1": "Sand Veil",
+    "2": "",
+    "H": "Sand Rush"
+  },
+  "training": {
+    "ev": {
+      "amount": 1,
+      "type": "def"
+    },
+    "catch": 255,
+    "friendship": 50,
+    "exp": 60,
+    "growth": "medium-fast"
+  },
+  "breeding": {
+    "egg": [
+      "field"
+    ],
+    "gender_ratio": "50:50",
+    "cycles": 20
+  },
+  "stats": {
+    "hp": 50,
+    "atk": 75,
+    "def": 85,
+    "spa": 20,
+    "spd": 30,
+    "spe": 40
+  },
+  "moves": {
+    "level": {
+      "1": ["growl", "tackle"]
+    },
+    "egg": []
+  },
+  "tags": [
+    "kanto",
+    "basic"
+  ]
+}

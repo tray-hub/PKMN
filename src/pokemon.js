@@ -1,7 +1,54 @@
 const { natures } = require('./natures.js');
 
+let registeredPokemon = {}
+
+class BasePokemon {
+
+  // Important Identifiers
+  #id;
+  #pokedex;
+  #types = ["", ""]
+
+  // Attributes
+  #species;
+  #height;
+  #weight;
+  #abilities = {"1": "", "2": "", "H": ""};
+  #base_stats = {hp:0, atk:0, def:0, spa:0, spd: 0, spe: 0};
+
+  // Training
+  #ev_amount;
+  #ev_type;
+  #catchrate;
+  #friendship;
+  #exp_gain;
+  #growthrate;
+
+  // Breeding
+  #egg_types = [];
+  #gender_ratio = {male: 50, female: 50};
+  #egg_cycles;
+
+  // Information
+  #pokedex_entries = {};
+  #games = {};
+  #tags = [];
+
+  // Moves
+  #moves_level;
+  #moves_egg;
+  #moves_tm;
+  #moves_tr;
+
+  constructor(options) {
+
+  }
+
+}
+
 class Pokemon {
 
+  #id = "";
   #species = "";
   #name = "";
   #nickname = undefined;
@@ -36,7 +83,7 @@ class Pokemon {
     spe: 0
   }
 
-  constructor() {
+  constructor(options) {
     this.#species = 'bulbasaur';
     this.#name = 'Bulbasaur';
     this.#nature = 'adament';
@@ -78,7 +125,5 @@ class Pokemon {
   }
 
 }
-
-console.log(natures['adament'].getIncrease())
 
 module.exports = Pokemon;

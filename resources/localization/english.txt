@@ -1,2 +1,14 @@
 # Pokemon Names #
 pokemon.bulbasaur.name=Bulbasaur
+
+
+
+
+
+
+
+
+
+
+pokemon.sandshrew.name=Sandshrew
+pokemon.sandshrew-alola.name=Alolan Sandshrew
