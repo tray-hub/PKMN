@@ -151,12 +151,12 @@
   },
   "letsgoeevee": {
     "name": "Let's Go Eevee",
-    "generation": 1,
+    "generation": 7,
     "console": "Nintendo Switch"
   },
   "letsgopikachu": {
     "name": "Let's Go Pikachu",
-    "generation": 1,
+    "generation": 7,
     "console": "Nintendo Switch"
   },
   "sword": {
@@ -165,8 +165,8 @@
     "console": "Nintendo Switch"
   },
   "shield": {
-    "name": "",
-    "generation": 2,
+    "name": "Shield",
+    "generation": 8,
     "console": "Nintendo Switch"
   },
   "brilliantdiamond": {

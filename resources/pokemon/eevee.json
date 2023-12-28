@@ -1,0 +1,157 @@
+{
+  "pokemon": "eevee",
+  "dex": 133,
+  "types": [
+    "NORMAL"
+  ],
+  "species": "Evolution",
+  "forms": [],
+  "height": 0.3,
+  "weight": 6.5,
+  "ability": {
+    "1": "Run Away",
+    "2": "Adaptability",
+    "H": "Anticipation"
+  },
+  "training": {
+    "ev": {
+      "amount": 11,
+      "type": "spd"
+    },
+    "catch": 45,
+    "friendship": 50,
+    "exp": 65,
+    "growth": "medium-fast"
+  },
+  "breeding": {
+    "egg": [
+      "field"
+    ],
+    "gender_ratio": "87.5:12.5",
+    "cycles": 35
+  },
+  "stats": {
+    "hp": 55,
+    "atk": 55,
+    "def": 50,
+    "spa": 45,
+    "spd": 65,
+    "spe": 55
+  },
+  "moves": {
+    "level": {
+      "1": ["growl", "tackle"]
+    },
+    "egg": []
+  },
+  "pokedex_entries": {},
+  "local_dex": {},
+  "games": {},
+  "evolution": [
+    {
+      "pokemon": "vaporeon",
+      "requirements": [
+        {
+          "type": "item",
+          "value": "water stone"
+        }
+      ],
+      "logic": "and"
+    },
+    {
+      "pokemon": "jolteon",
+      "requirements": [
+        {
+          "type": "item",
+          "value": "thunder stone"
+        }
+      ],
+      "logic": "and"
+    },
+    {
+      "pokemon": "flareon",
+      "requirements": [
+        {
+          "type": "item",
+          "value": "fire stone"
+        }
+      ],
+      "logic": "and"
+    },
+    {
+      "pokemon": "espeon",
+      "requirements": [
+        {
+          "type": "overworld-time",
+          "value": "day"
+        },
+        {
+          "type": "friendship-at-above",
+          "value": "220"
+        }
+      ],
+      "logic": "and"
+    },
+    {
+      "pokemon": "umbreon",
+      "requirements": [
+        {
+          "type": "overworld-time",
+          "value": "night"
+        },
+        {
+          "type": "friendship-at-above",
+          "value": "220"
+        }
+      ],
+      "logic": "and"
+    },
+    {
+      "pokemon": "leafeon",
+      "requirements": [
+        {
+          "type": "item",
+          "value": "leaf stone"
+        },
+        {
+          "type": "overworld-object",
+          "value": "mossy rock"
+        }
+      ],
+      "logic": "or"
+    },
+    {
+      "pokemon": "glaceon",
+      "requirements": [
+        {
+          "type": "item",
+          "value": "ice stone"
+        },
+        {
+          "type": "overworld-object",
+          "value": "icy rock"
+        }
+      ],
+      "logic": "or"
+    },
+    {
+      "pokemon": "sylveon",
+      "requirements": [
+        {
+          "type": "move-typing",
+          "value": "fairy"
+        },
+        {
+          "type": "friendship-at-above",
+          "value": "220"
+        }
+      ],
+      "logic": "and"
+    }
+  ],
+  "tags": [
+    "kanto",
+    "starter",
+    "basic"
+  ],
+}

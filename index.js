@@ -1,4 +1,4 @@
-const Pokemon = require('./src/pokemon.js');
+const { Pokemon } = require('./src/pokemon.js');
 
 let bulbasaur = new Pokemon();
 

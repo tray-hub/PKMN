@@ -1,11 +1,12 @@
 {
-  "id": "bulbasaur",
+  "pokemon": "bulbasaur",
   "dex": 1,
   "types": [
     "GRASS",
     "POISON"
   ],
   "species": "Seed",
+  "form": "",
   "height": 0.7,
   "weight": 6.9,
   "ability": {
@@ -68,17 +69,72 @@
       "power whip",
       "skull bash",
       "sludge"
+    ],
+    "tm": [
+      "take down",
+      "charm",
+      "protect",
+      "acid spray",
+      "trailblaze",
+      "facade",
+      "magical leaf",
+      "venoshock",
+      "endure",
+      "sunny day",
+      "bullet seed",
+      "false swipe",
+      "body slam",
+      "sleep talk",
+      "seed bomb",
+      "grass knot",
+      "rest",
+      "swords dance",
+      "substitute",
+      "giga drain",
+      "energy ball",
+      "helping hand",
+      "grassy terrain",
+      "grass pledge",
+      "sludge bomb",
+      "leaf storm",
+      "solar beam",
+      "tera blast",
+      "toxic",
+      "knock off",
+      "weather ball",
+      "grassy glide",
+      "double-edge",
+      "curse"
+    ],
+    "tr": [
+
     ]
   },
-  "tags": [
-    "kanto",
-    "starter",
-    "basic"
-  ],
+  "pokedex_entries": {
+
+  },
   "local_dex": {
 
   },
   "games": {
 
-  }
+  },
+  "evolved_from": "",
+  "evolution": [
+    {
+      "pokemon": "ivysaur",
+      "requirements": [
+        {
+          "type": "level",
+          "value": "16"
+        }
+      ],
+      "logic": "and"
+    }
+  ],
+  "tags": [
+    "kanto",
+    "starter",
+    "basic"
+  ],
 }

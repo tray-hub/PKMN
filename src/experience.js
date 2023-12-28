@@ -33,6 +33,15 @@ for(let rate in growth) {
   T = (1.1: Nice throw) (1.5: Great throw) (2: Excellent throw) (1: otherwise)
   n = (1.1: New catch) (1: otherwise)
 */
+/**
+  Gives the resulting experience from a fight or capture
+  @param {Pokemon} winner - Winner of the battle or active pokemon if caught
+  @param {Pokemon} loser - Loser of the battle or caught pokemon
+  @param {boolean} caught - Whether this was a caught pokemon
+  @param {number} numberThrows - Amount of throws
+  @param {string} throwType - '', 'nice', 'great', or 'excellent' throw
+  @returns {number} Experience yield for the winner
+*/
 function getExperienceGain(winner, loser, caught=false, numberThrows=1, throwType='') {
   let b = loser.training.exp;
   let L = loser.level;
