@@ -47,54 +47,191 @@ class BasePokemon {
 
   }
 
-  getPokemon() { return this.#pokemon; }
-  getPokedex() { return this.#pokedex; }
-  getTypes() { return this.#types; }
-  getSpecies() { return this.#species; }
-  getHeight() { return this.#height; }
-  getWeight() { return this.#weight; }
-  getAbilities() { return this.#abilities; }
-  getAbility1() { return this.#abilities['1']; };
-  getAbility2() { return this.#abilities['2']; };
-  getAbilityH() { return this.#abilities['H']; };
-  getBaseStats() { return this.#base_stats; }
-  getBaseHP() { return this.#base_stats.hp; }
-  getBaseATK() { return this.#base_stats.atk; }
-  getBaseDEF() { return this.#base_stats.def; }
-  getBaseSPA() { return this.#base_stats.spa; }
-  getBaseSPD() { return this.#base_stats.spd; }
-  getBaseSPE() { return this.#base_stats.spe; }
-  getEVYieldAmount() { return this.#ev_amount; }
-  getEVYieldType() { return this.#ev_type; }
-  getCatchRate() { return this.#catch_rate; }
-  getBaseFriendship() { return this.#base_friendship; }
-  getExperienceGain() { return this.#exp_gain; }
-  getGrowthRate() { return this.#growth_rate; }
-  getEggGroups() { return this.#egg_groups; }
-  getGenderRatio() { return this.#gender_ratio; }
-  getGenderMaleRatio() { return this.#gender_ratio.male; }
-  getGenderFemaleRatio() { return this.#gender_ratio.female; }
-  getEggCycles() { return this.#egg_cycles; }
-  getPokedexEntries() { return this.#pokedex_entries; }
+  getPokemon() {
+    return this.#pokemon;
+  }
+
+  getPokedex() {
+    return this.#pokedex;
+  }
+
+  getTypes() {
+    return this.#types;
+  }
+
+  getSpecies() {
+    return this.#species;
+  }
+
+  getHeight() {
+    return this.#height;
+  }
+
+  getWeight() {
+    return this.#weight;
+  }
+
+  getAbilities() {
+    return this.#abilities;
+  }
+
+  getAbility1() {
+    return this.#abilities['1'];
+  }
+
+  getAbility2() {
+    return this.#abilities['2'];
+  }
+
+  getAbilityH() {
+    return this.#abilities['H'];
+  }
+
+  getBaseStats() {
+    return this.#base_stats;
+  }
+
+  getBaseHP() {
+    return this.#base_stats.hp;
+  }
+
+  getBaseATK() {
+    return this.#base_stats.atk;
+  }
+
+  getBaseDEF() {
+    return this.#base_stats.def;
+  }
+
+  getBaseSPA() {
+    return this.#base_stats.spa;
+  }
+
+  getBaseSPD() {
+    return this.#base_stats.spd;
+  }
+
+  getBaseSPE() {
+    return this.#base_stats.spe;
+  }
+
+  getEVYieldAmount() {
+    return this.#ev_amount;
+  }
+
+  getEVYieldType() {
+    return this.#ev_type;
+  }
+
+  getCatchRate() {
+    return this.#catch_rate;
+  }
+
+  getBaseFriendship() {
+    return this.#base_friendship;
+  }
+
+  getExperienceGain() {
+    return this.#exp_gain;
+  }
+
+  getGrowthRate() {
+    return this.#growth_rate;
+  }
+
+  getEggGroups() {
+    return this.#egg_groups;
+  }
+
+  getGenderRatio() {
+    return this.#gender_ratio;
+  }
+
+  getGenderMaleRatio() {
+    return this.#gender_ratio.male;
+  }
+
+  getGenderFemaleRatio() {
+    return this.#gender_ratio.female;
+  }
+
+  getEggCycles() {
+    return this.#egg_cycles;
+  }
+
+  getPokedexEntries() {
+    return this.#pokedex_entries;
+  }
+
   getPokedexEntry(game) {
     return this.#pokedex_entries[(game + "").toLowerCase()]==undefined?"":this.#pokedex_entries[(game + "").toLowerCase()];
   }
-  getLocalPokedex() { return this.#local_pokedex; }
-  getGames() { return this.#games; }
-  getTags() { return this.#tags; }
+
+  getLocalPokedex() {
+    return this.#local_pokedex;
+  }
+
+  /**
+    @returns {object} List of games and information of the pokemon from those games
+  */
+  getGames() {
+    return this.#games;
+  }
+
+  /**
+    @returns {string[]} Tags for this pokemon
+  */
+  getTags() {
+    return this.#tags;
+  }
+
+  /**
+    @returns {object} All moves learned by the pokemon, and how they learn it
+  */
   getMoves() {
     // TODO: Create function to combine level, egg, tm, and tr moves into an array
     return [];
   }
-  getMovesLevel() { return this.#moves_level; }
-  getMovesEgg() { return this.#moves_egg; }
-  getMovesTM() { return this.#moves_tm; }
-  getMovesTR() { return this.#moves_tr; }
 
+  /**
+    @returns {object} Moves learned by leveling up
+  */
+  getMovesLevel() { return this.#moves_level; }
+
+  /**
+    @returns {string[]} Moves learned by hatching from an egg
+  */
+  getMovesEgg() { return this.#moves_egg; }
+
+  /**
+    @returns {string[]} Moves learned by TM
+  */
+  getMovesTM() {
+    return this.#moves_tm;
+  }
+
+  /**
+    @returns {string[]} Moves learned by TR
+  */
+  getMovesTR() {
+    return this.#moves_tr;
+  }
+
+  /**
+    Parses JSON values into this object
+    @param {object} options - JSON object to parse
+  */
   fromJSON(options) {
     if(options != undefined) {
 
     }
+  }
+
+  /**
+    @returns {object} Converts this object into a JSON for saving
+  */
+  toJSON() {
+    return {};
   }
 
 }

@@ -34,7 +34,7 @@ function getJSONKeyValue(json, key) {
   @param {string} attribute - The name of the attribute
   @param {object} value - The value to set for the attribute
 */
-function setValueIfUndefined(object, attribute, value) {
+function setPropertyIfUndefined(object, attribute, value) {
   if(value != undefined) {
     if(object != undefined) {
       object.attribute = value;
