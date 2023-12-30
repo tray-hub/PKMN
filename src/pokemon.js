@@ -115,6 +115,13 @@ class BasePokemon {
     return this.#base_stats.spe;
   }
 
+  /**
+    @returns {number} All base stats added together
+  */
+  getBaseStatTotal() {
+    return this.getBaseHP() + this.getBaseATK() + this.getBaseDEF() + this.getBaseSPA() + this.getBaseSPD() + this.getBaseSPE();
+  }
+
   getEVYieldAmount() {
     return this.#ev_amount;
   }
@@ -234,22 +241,29 @@ class BasePokemon {
     return {};
   }
 
+  /**
+    @returns {string} Localization key
+  */
+  getLocalizationKey() {
+    return `pokemon.${this.#pokemon}`
+  }
+
 }
 
 class Pokemon extends BasePokemon {
 
-  #nickname = "";
-  #level = 1;
-  #experience = 1;
-  #friendship
+  #nickname;
+  #level;
+  #experience;
+  #friendship;
   #nature;
   #ivs = {
-    hp: 31,
-    atk: 31,
-    def: 31,
-    spa: 31,
-    spd: 31,
-    spe: 31
+    hp: 0,
+    atk: 0,
+    def: 0,
+    spa: 0,
+    spd: 0,
+    spe: 0
   }
   #evs = {
     hp: 0,
@@ -259,32 +273,16 @@ class Pokemon extends BasePokemon {
     spd: 0,
     spe: 0
   }
+  #language;
 
-  constructor(options) {
-    this.#species = 'bulbasaur';
-    this.#name = 'Bulbasaur';
-    this.#nature = 'adament';
-    this.#stats.hp = 45;
-    this.#stats.atk = 49;
-    this.#stats.def = 49;
-    this.#stats.spa = 65;
-    this.#stats.spd = 65;
-    this.#stats.spe = 45;
-  }
+  constructor(options) {}
 
-  getSpecies() { return this.#species; }
-  getName() { return this.#name; }
-  getNickname() { return this.#nickname; }
-  getLevel() { return this.#level; }
-  getExperience() { return this.#experience; };
-  getNature() { return natures[this.#nature].getName(); };
-  getStats() { return this.#stats; };
-  getIndividualValues() { return this.#ivs; };
-  getEffortValues() { return this.#evs; };
-
-  isNicknamed() { return this.#nickname == undefined; }
-
-  getStatValue(stat) {
+  /**
+    Calculates a specified stat value
+    @param {string} stat - The stat to calculate
+    @returns {number} Calculates 'stat' input based on base stats, ivs, evs, and level
+  */
+  calculateStatValue(stat) {
     let value = undefined;
     if(this.#ivs[stat] != undefined) {
       if(stat.toLowerCase() === 'hp') {
@@ -299,6 +297,72 @@ class Pokemon extends BasePokemon {
       value = Math.floor(value);
     }
     return value;
+  }
+
+  /**
+    @returns {number} Calculated HP stat based on base stats, ivs, evs, and level
+  */
+  getHP() {
+    return this.calculateStatValue('hp');
+  }
+
+  /**
+    @returns {number} Calculated Atk stat based on base stats, ivs, evs, and level
+  */
+  getATK() {
+    return this.calculateStatValue('atk');
+  }
+
+  /**
+    @returns {number} Calculated Def stat based on base stats, ivs, evs, and level
+  */
+  getDEF() {
+    return this.calculateStatValue('def');
+  }
+
+  /**
+    @returns {number} Calculated Sp. Atk stat based on base stats, ivs, evs, and level
+  */
+  getSPA() {
+    return this.calculateStatValue('spa');
+  }
+
+  /**
+    @returns {number} Calculated Sp. Def stat based on base stats, ivs, evs, and level
+  */
+  getSPD() {
+    return this.calculateStatValue('spd');
+  }
+
+  /**
+    @returns {number} Calculated Speed stat based on base stats, ivs, evs, and level
+  */
+  getSPE() {
+    return this.calculateStatValue('spe');
+  }
+
+  /**
+    @returns {object} All calculated stats for this mon
+
+    @example
+      bulbasaur@lvl100 0ivs and 0evs
+      returns:
+        hp: 200,
+        atk: 92,
+        def: 92,
+        spa: 121,
+        spd: 121,
+        spe: 85
+  */
+  getStats() {
+    return {
+      hp: this.getHP(),
+      atk: this.getATK(),
+      def: this.getDEF(),
+      spa: this.getSPA(),
+      spd: this.getSPD(),
+      spe: this.getSPE()
+    }
   }
 
 }
